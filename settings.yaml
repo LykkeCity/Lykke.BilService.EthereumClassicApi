@@ -1,6 +1,34 @@
 Api:
+  GasReserve:
+    settings-key: BilEthereumClassicApi-GasReserve
   IsMainNet:
-    settings-key: Rootstock-IsMainNet
+    settings-key: BilEthereumClassic-IsMainNet
+  MaxGasAmount:
+    settings-key: BilEthereumClassicApi-MaxGasAmount
+  Db:
+    DataConnString:
+      settings-key: BilEthereumClassic-DataConnString
+      types:
+      - AzureTableStorage
+    LogsConnString:
+      settings-key: LogsConnString
+      types:
+      - AzureTableStorage
+  RpcNode:
+    ApiUrl:
+      settings-key: BilEthereumClassic-RpcNodeApiUrl
+    ConnectionTimeout:
+      settings-key: BilEthereumClassic-RpcNodeConnectionTimeout
+    EnableTelemetry:
+      settings-key: BilEthereumClassic-RpcNodeEnableTelemetry
+SlackNotifications:
+  AzureQueue:
+    ConnectionString:
+      settings-key: SlackNotificationsConnString
+      types:
+      - AzureTableStorage
+    QueueName:
+      settings-key: SlackQueueName
 MonitoringServiceClient:
   MonitoringServiceUrl:
     settings-key: MonitoringServiceUrl
