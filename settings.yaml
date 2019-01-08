@@ -1,32 +1,36 @@
 Api:
+  ConfirmationLevel:
+    settings-key: Bcn-ETС-ConfirmationLevel
+  GasPriceRange:
+    settings-key: Bcn-ETС-GasPriceRange
   GasReserve:
-    settings-key: BilEthereumClassicApi-GasReserve
+    settings-key: Bcn-ETС-GasReserve
   IsMainNet:
-    settings-key: BilEthereumClassic-IsMainNet
+    settings-key: Bcn-ETС-IsMainNet
   MaxGasAmount:
-    settings-key: BilEthereumClassicApi-MaxGasAmount
+    settings-key: Bcn-ETС-MaxGasAmount
   Db:
     DataConnString:
-      settings-key: BilEthereumClassic-DataConnString
+      settings-key: Bcn-ETС-DataConnString
       types:
-      - AzureTableStorage
+        - AzureTableStorage
     LogsConnString:
-      settings-key: LogsConnString
+      settings-key: BcnLogsConnString
       types:
-      - AzureTableStorage
+        - AzureTableStorage
   RpcNode:
     ApiUrl:
-      settings-key: BilEthereumClassic-RpcNodeApiUrl
+      settings-key: Bcn-ETС-RpcNodeApiUrl
     ConnectionTimeout:
-      settings-key: BilEthereumClassic-RpcNodeConnectionTimeout
+      settings-key: Bcn-ETС-RpcNodeConnectionTimeout
     EnableTelemetry:
-      settings-key: BilEthereumClassic-RpcNodeEnableTelemetry
+      settings-key: Bcn-ETС-RpcNodeEnableTelemetry
 SlackNotifications:
   AzureQueue:
     ConnectionString:
       settings-key: SlackNotificationsConnString
       types:
-      - AzureTableStorage
+        - AzureTableStorage
     QueueName:
       settings-key: SlackQueueName
 MonitoringServiceClient:
