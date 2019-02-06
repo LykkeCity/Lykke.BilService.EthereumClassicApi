@@ -1,0 +1,38 @@
+Api:
+  ConfirmationLevel:
+    settings-key: Bcn-ETC-ConfirmationLevel
+  GasPriceRange:
+    settings-key: Bcn-ETC-GasPriceRange
+  GasReserve:
+    settings-key: Bcn-ETC-GasReserve
+  IsMainNet:
+    settings-key: Bcn-ETC-IsMainNet
+  MaxGasAmount:
+    settings-key: Bcn-ETC-MaxGasAmount
+  Db:
+    DataConnString:
+      settings-key: Bcn-ETC-DataConnString
+      types:
+        - AzureTableStorage
+    LogsConnString:
+      settings-key: BcnLogsConnString
+      types:
+        - AzureTableStorage
+  RpcNode:
+    ApiUrl:
+      settings-key: Bcn-ETC-RpcNodeApiUrl
+    ConnectionTimeout:
+      settings-key: Bcn-ETC-RpcNodeConnectionTimeout
+    EnableTelemetry:
+      settings-key: Bcn-ETC-RpcNodeEnableTelemetry
+SlackNotifications:
+  AzureQueue:
+    ConnectionString:
+      settings-key: SlackNotificationsConnString
+      types:
+        - AzureTableStorage
+    QueueName:
+      settings-key: SlackQueueName
+MonitoringServiceClient:
+  MonitoringServiceUrl:
+    settings-key: MonitoringServiceUrl
